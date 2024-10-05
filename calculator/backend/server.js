@@ -13,7 +13,7 @@ const app = express();
 const server = http.createServer(app);
 const io = socketio(server, {
     cors: {
-        origin: 'http://localhost:5174',
+        origin: 'http://localhost:5173',
         methods: ['GET', 'POST', 'DELETE']
     }
 });
@@ -31,7 +31,7 @@ mongoose.connect('mongodb+srv://cluster1:cluster@cluster0.ogz3jqr.mongodb.net/?r
     console.error('MongoDB connection error:', err); 
 });
 
-app.use(cors({ origin: 'http://localhost:5174' }));
+app.use(cors({ origin: 'http://localhost:5173' }));
 app.use(express.json());
 
 const messagesRouter = require('./routes/messages');
