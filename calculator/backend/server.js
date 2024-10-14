@@ -87,4 +87,4 @@ app.use(express.json());
 const messagesRouter = require('./routes/messages.js');
 app.use('/history', messagesRouter);
 
-module.exports = app;
+module.exports = app
