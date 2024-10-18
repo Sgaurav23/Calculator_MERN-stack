@@ -1,2 +1,2 @@
-.vercel
+echo '!.vercel' >> .gitignore
 node_modules
