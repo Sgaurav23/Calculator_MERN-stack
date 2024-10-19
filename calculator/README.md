@@ -6,3 +6,9 @@ To run the backend server:
 cd backend
 npm install
 npm start
+
+
+
+
+## Deployment
+This project is live on Netlify: [mern-calculator](https://mern-calculator.netlify.app)
