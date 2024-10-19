@@ -241,6 +241,8 @@
 
 
 
+import React from 'react';
+import ReactDOM from 'react-dom';
 
 import { useState, useEffect } from "react";
 import './calculator.css';
@@ -253,7 +255,7 @@ function Calculator() {
     const [result, setResult] = useState('');
     const [history, setHistory] = useState([]);
     const [showHistory, setShowHistory] = useState(false);
-
+  
     useEffect(() => {
         axios.get(API_URL)
             .then(response => setHistory(response.data))
