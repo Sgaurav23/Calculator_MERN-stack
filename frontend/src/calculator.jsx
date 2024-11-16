@@ -78,7 +78,24 @@ function Calculator() {
             <input type="text" value={input} readOnly placeholder="input" />
             <input type="text" value={result} readOnly placeholder="result" />
             {error && <p className="error">{error}</p>}
-            <div className="buttons"> {['1', '2', '3', '+', '4', '5', '6', '-', '7', '8', '9', '*', '.', '0', '/', 'log', 'sin', 'cos', 'tan'].map((btn) => ( <button className={btn.match(/[0-9]/) ? "numeric" : btn.match(/[+\-*/]/) ? "algebraic" : btn.match(/(log|sin|cos|tan)/) ? "trigonometric" : "function"} onClick={() => handleChange(btn)} key={btn} > {btn} </button> ))} <button className="function" onClick={clear}>clear</button> <button className="function" onClick={calculate}>=</button> <button className="function" onClick={clearHistory}>clrHtry</button> <button className="function" onClick={toggleHistory}>histry</button> </div>
+            <div className="buttons">
+                {['1', '2', '3', '+', '4', '5', '6', '-', '7', '8', '9', '*', '.', '0', '/', 'log', 'sin', 'cos', 'tan'].map((btn) => (
+                    <button
+                        className={btn.match(/[0-9]/) ? "numeric" :
+                                   btn.match(/[+\-*/]/) ? "algebraic" :
+                                   btn.match(/(log|sin|cos|tan)/) ? "trigonometric" : 
+                                   "function"}
+                        onClick={() => handleChange(btn)}
+                        key={btn}
+                    >
+                        {btn}
+                    </button>
+                ))}
+                <button className="function" onClick={clear}>clear</button>
+                <button className="function" onClick={calculate}>=</button>
+                <button className="function" onClick={clearHistory}>clrHtry</button>
+                <button className="function" onClick={toggleHistory}>histry</button>
+            </div>
             {showHistory && (
                 <div className="history">
                     <h2>History</h2>
