@@ -13,10 +13,6 @@
   },
   "homepage": "https://sgaurav23.github.io/Calculator_MERN-stack/",
   "dependencies": {
-<<<<<<< HEAD
-=======
-    "axios": "^1.7.7",
->>>>>>> origin/master
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
@@ -29,10 +25,6 @@
     "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-plugin-react-refresh": "^0.4.7",
     "gh-pages": "^6.1.1",
-<<<<<<< HEAD
     "vite": "^5.3.3"
-=======
-    "vite": "^5.4.9"
->>>>>>> origin/master
   }
 }

@@ -1,7 +1,4 @@
-<<<<<<< HEAD
 import React from 'react';
-=======
->>>>>>> origin/master
 
 import './App.css'
 // import { HashRouter as Router, Route, Switch } from 'react-router-dom';
