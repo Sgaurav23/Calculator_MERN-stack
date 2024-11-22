@@ -105,7 +105,7 @@ function Calculator() {
 
     return (
         <div className="calculator">
-            <h1>Calculator</h1>
+            <h1 class="title">Calculator</h1>
             <input type="text" value={input} readOnly placeholder="input" />
             <input type="text" value={loading ? "Loading..." : result} readOnly placeholder="result" />
             {error && <p className="error">{error}</p>}
